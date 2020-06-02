@@ -32,6 +32,13 @@ body{
     padding: 10px;
 }
 
+#part5{
+    background:rgb(112, 222, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
 
 
 #button1{
