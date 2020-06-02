@@ -15,7 +15,7 @@ button2.addEventListener("click", function(event){
 let elHover = document.getElementById("element-hover");
 
 elHover.addEventListener("mouseenter", function(event){
-    alert("Hey, I told you not to hover over me!")  
+    alert("Hey, I told you not to hover over me!")
 });
 
 //Part 3
@@ -39,5 +39,13 @@ buttonS.addEventListener("click", function(event){
 
 });
 
+//Part 5
+let volumeButton = document.getElementById("volume-button");
 
-
+volumeButton.addEventListener("click", function(event){
+  let volume
+  let radius
+  radius = document.getElementById("radius").value
+  volume = Math.floor(radius*radius*radius*3.14*4/3)
+   alert(volume);
+});
