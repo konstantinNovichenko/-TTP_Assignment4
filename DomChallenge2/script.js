@@ -45,7 +45,7 @@ let volumeButton = document.getElementById("volume-button");
 volumeButton.addEventListener("click", function(event){
   let volume
   let radius
-  radius = document.getElementById("radius").value
-  volume = Math.floor(radius*radius*radius*3.14*4/3)
+  radius = parseFloat(document.getElementById("radius").value);
+  volume = Math.round((radius*radius*radius*Math.PI*4/3)*100)/(100);
    alert(volume);
 });
